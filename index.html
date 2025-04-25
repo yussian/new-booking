@@ -61,7 +61,7 @@
         <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">NCU Piano</h1>
+          <h1 class="sitename">Booking system</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -71,25 +71,8 @@
             <li><a href="#specials">Specials</a></li>
             <li><a href="#events">Events</a></li>
             <li><a href="#gallery">Gallery</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+  
+              
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
@@ -114,7 +97,7 @@
             <h2 data-aos="fade-up" data-aos-delay="100">Welcome to <span>NCU Piano Club
             
             </span></h2>
-            <p class="intro-text" data-aos="fade-up" data-aos-delay="200">Bringing the gift of heart-touching melodies to life through the piano</p>
+            <p class="intro-text" data-aos="fade-up" data-aos-delay="200">Bringing the gift of heart-touching melodies to life through piano</p>
             
 
             <div class="social-links text-center"  data-aos="fade-up" data-aos-delay="100">
@@ -125,7 +108,7 @@
             </div>
         
             <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-              <a href="#book-a-table" class="cta-btn">Book a room</a>
+                <a href="#book-a-room" class="cta-btn">Book a room</a>
             </div>
           </div>
           <div class="col-lg-4 d-flex align-items-center justify-content-center mt-5 mt-lg-0">
@@ -489,54 +472,123 @@
 
     </section><!-- /Events Section -->
 
-    <!-- Book A Table Section -->
-    <section id="book-a-table" class="book-a-table section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>RESERVATION</h2>
-        <p>Book a Room</p>
-      </div><!-- End Section Title -->
+<!-- Book a Piano Room Section -->
+<section id="book-a-room" class="book-a-table section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>RESERVATION</h2>
+    <p>Book a Piano Room</p>
+  </div>
 
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
-          <div class="row gy-4">
-            <div class="col-lg-4 col-md-6">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <input type="date" name="date" class="form-control" id="date" placeholder="Date" required="">
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <input type="time" class="form-control" name="time" id="time" placeholder="Time" required="">
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" required="">
-            </div>
-          </div>
-
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-          </div>
-
-          <div class="text-center mt-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-            <button type="submit">Book a Table</button>
-          </div>
-        </form><!-- End Reservation Form -->
-
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <input type="text" name="phone" class="form-control" placeholder="Your Phone" required>
+        </div>
       </div>
 
-    </section><!-- /Book A Table Section -->
+      <!-- Reservation Time Slots -->
+      <div class="row mt-4">
+        <div class="col-lg-12">
+         <fieldset><legend>Choose Your Time :</legend> <ul class="php-email-form" id="reservation-days"></ul></fieldset>
+        </div>
+      </div>
+
+      <style>
+        fieldset {
+          border: 1px solid #424949;       
+          background-color: #000000;      
+          padding: 1em;
+          
+        }
+      
+        legend {
+          color:#424949;                   /* 標題文字顏色 */
+          font-weight: nor;
+          font-size: 16px;
+        }
+      </style>
+
+      <!-- Submit -->
+      <div class="text-center mt-3">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your booking request was sent!</div>
+        <button type="submit" class="btn btn-primary">Submit Reservation</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Generate time slots via JS -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+    const container = document.getElementById("reservation-days");
+
+    days.forEach(day => {
+      const li = document.createElement("li");
+      li.className = "list-group-item";
+
+      const toggle = document.createElement("a");
+      toggle.className = "dropdown-toggle reservation-day";
+      toggle.setAttribute("data-bs-toggle", "collapse");
+      toggle.href = `#${day.toLowerCase()}`;
+      toggle.role = "button";
+      toggle.ariaExpanded = "false";
+      toggle.ariaControls = day.toLowerCase();
+      toggle.textContent = day;
+
+      const collapse = document.createElement("div");
+      collapse.className = "collapse";
+      collapse.id = day.toLowerCase();
+
+      for (let h = 8; h <= 22; h++) {
+        const hStr = h.toString().padStart(2, '0');
+        ["00", "30"].forEach(min => {
+          if (h === 22 && min === "30") return;
+          const time = `${hStr}:${min}`;
+const fullKey = `${day} ${time}`;
+const isFull = fullyBooked.includes(fullKey);
+
+const div = document.createElement("div");
+div.className = "form-check";
+
+div.innerHTML = `
+  <input class="form-check-input" type="checkbox" name="times[]" value="${fullKey}" ${isFull ? 'disabled' : ''}>
+  <label class="form-check-label ${isFull ? 'text-danger' : ''}">
+    ${isFull ? `${time}（已滿）` : time}
+  </label>`;
+
+collapse.appendChild(div);
+
+        });
+      }
+
+      li.appendChild(toggle);
+      li.appendChild(collapse);
+      container.appendChild(li);
+    });
+  });
+
+  // 模擬已滿的時段資料（實際上應該從資料庫或伺服器來）
+const fullyBooked = [
+  "Monday 08:30",
+  "Tuesday 10:00",
+  "Friday 14:30"
+];
+
+</script>
+
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
@@ -567,8 +619,92 @@
                 "320": {
                   "slidesPerView": 1,
                   "spaceBetween": 40
-                },
-                "1200": {
+   
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 12:00">
+              <label class="form-check-label">12:00</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 12:30">
+              <label class="form-check-label">12:30</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 13:00">
+              <label class="form-check-label">13:00</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 13:30">
+              <label class="form-check-label">13:30</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 14:00">
+              <label class="form-check-label">14:00</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 14:30">
+              <label class="form-check-label">14:30</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 15:00">
+              <label class="form-check-label">15:00</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 15:30">
+              <label class="form-check-label">15:30</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 16:00">
+              <label class="form-check-label">16:00</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 16:30">
+              <label class="form-check-label">16:30</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 17:00">
+              <label class="form-check-label">17:00</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 17:30">
+              <label class="form-check-label">17:30</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 18:00">
+              <label class="form-check-label">18:00</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 18:30">
+              <label class="form-check-label">18:30</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 19:00">
+              <label class="form-check-label">19:00</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 19:30">
+              <label class="form-check-label">19:30</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 20:00">
+              <label class="form-check-label">20:00</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 20:30">
+              <label class="form-check-label">20:30</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 21:00">
+              <label class="form-check-label">21:00</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 21:30">
+              <label class="form-check-label">21:30</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="times[]" value="Monday 22:00">
+              <label class="form-check-label">22:00</label>
+            </div></div>
+     "1200": {
                   "slidesPerView": 3,
                   "spaceBetween": 20
                 }
@@ -656,7 +792,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Gallery</h2>
-        <p>Some photos from Our Restaurant</p>
+        <p>Some photos from Our Club</p>
       </div><!-- End Section Title -->
 
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
@@ -734,158 +870,12 @@
     </section><!-- /Gallery Section -->
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Contact Us</p>
-      </div><!-- End Section Title -->
-
-      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
-        <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div><!-- End Google Maps -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Location</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Open Hours</h3>
-                <p>Monday-Saturday:<br>11:00 AM - 2300 PM</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>info@example.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
   </main>
 
   <footer id="footer" class="footer">
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Restaurantly</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
-        </div>
-
-      </div>
-    </div>
-
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Restaurantly</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">NCU piano</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
