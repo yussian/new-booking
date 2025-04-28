@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>NCU piano club room booking system</title>
+  <meta name="description" content="中央大學鋼琴社---琴房預約系統">
+  <meta name="keywords" content="中央大學鋼琴社">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header fixed-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          
+        </div>
+        <div class="languages d-none d-md-flex align-items-center">
+          <ul>
+            <li>En</li>
+            <li><a href="#">De</a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">Booking system</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home<br></a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>   
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a class="btn-book-a-table d-none d-xl-block" href="#book-a-table">Book a Table</a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/photo-1520523839897-bd0b52f945a0.avif" alt="" data-aos="fade-in">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 d-flex flex-column align-items-center align-items-lg-start">
+            <h2 data-aos="fade-up" data-aos-delay="100">Welcome to <span>NCU Piano Club
+            
+            </span></h2>
+            <p class="intro-text" data-aos="fade-up" data-aos-delay="200">Bringing the gift of heart-touching melodies to life through piano</p>
+            
+
+            <div class="social-links text-center"  data-aos="fade-up" data-aos-delay="100">
+              <a href="https://youtube.com/@ncu_piano_1991?si=N-VYMq53hLPidHf9" class="youtube"  target="_blank"> <i class="bi bi-youtube" ></i></a>
+              <a href="https://www.facebook.com/share/1Bo1uD7GC1/" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/ncu_piano33/?igsh=MmowYW53NXl6bWVr#" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+
+            </div>
+        
+            <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+                <a href="#book-a-room" class="cta-btn">Book a room</a>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-center justify-content-center mt-5 mt-lg-0">
+            <a href="https://youtu.be/UNsccM9qH4Q?si=xdSP8ofFK2O7N1j4" class="glightbox pulsating-play-btn"></a>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="assets/img/piano-concert-spotlight-stockcake.jpg" class="img-fluid about-img" alt="">
+          </div>
+          <div class="col-lg-6 order-2 order-lg-1 content">
+            <h3>若您是第一次使用，請閱讀以下注意事項</h3>
+            
+            <ul>
+            <li><span><i class="bi bi-check2-all"></i> <span>關於預約系統</span></li>
+            <li><span>預約方式為即按即預約。</span></li>
+            <li><span>每次預約為半個小時。</span></li>
+            <li><span>每人每周不得預約超過七小時，違規者系統將自動取消。</span></li>
+            <li><span>每周日00:00才會開放當周可預約的時段。</span></li>
+            <li><span>為達使用琴房效率最大化，預約後若無法到場請記得取消預約。</span></li>
+            </ul>
+
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>關於琴房</span></li>
+              <li><span>開完琴房後鑰匙請記得掛回社窩，並鎖上門。</span></li>
+              <li><span>離開琴房時請記得關燈、鎖門。</span></li>
+              <li> 
+                <span>有任何問題或建議請聯絡網管：<a href="mailto:yanchaun0970@gmail.com">yanchaun0970@gmail.com</a></span>
+              </li>
+            </ul>
+
+      
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Announcement</h2>
+        <p>重要公告</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <span>01</span>
+              <h4><a href="https://www.facebook.com/share/p/1BNY14cZm7/" class="stretched-link" target="_blank">期末音樂會&驗曲名單與工人面試名單</a></h4>
+                
+              
+      
+              <ul class="list-unstyled">
+                <li>
+                  驗曲時間：3/26（三）、3/27（四）
+                  <p>
+                      <i class="bi bi-clipboard-check-fill"></i> 地點：大琴房（若方便請帶兩份譜）
+                  </p>
+                </li>
+
+                <li>
+                  工人面試時間：3/26（三）、3/27（四）
+                  <p>
+                      <i class="bi bi-clipboard-check-fill"></i> 地點：社窩（據德樓一樓進去右轉）
+                  </p>
+                </li>
+
+              </p>
+              </ul>
+
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <span>02</span>
+              <h4><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2F1wfy0b6b3Zh60Qqpo0q3vNRT9D9H3NThBW0IERl-gR8o%2Fedit%3Fusp%3Ddrivesdk&h=AT3UBsxsHF1uXlTD6v0fZ280aHI-K6tN6sKGTSGkrYsSmnwXu9AgKdWL_O_vy-1owJIb-0arC3D0WQX8BaAdwGdlc6JBhMraSJgQ3DnCnIZTQrITp-JdWa1sm1VOqcVF8_nPaZVL0weTwdnEYhtJ6ejr7HqvfKLu1hkhHauZ1W9KTnjq&__tn__=-UK-R&c[0]=AT1oT1g_AWjo1FXMq2R2_t5Z5l8wewcgBVsnVBe3SoLInXX5WouTtuoQgU_cRm8Ee39H8hXyjVAX4ISkRlEmFA3K16fVFEmjfrR7uE-557eudhu_7Ux4uaJ1W50ry17WRFXB8GFDEyrpQu3J6APuUdk6Tu2w_lq4nri0dkIyeLLQ3zZEJOcyk5T7_azQP8wlAQ" class="stretched-link" target="_blank">期末音樂會報曲</a></h4>
+              <p><i class="bi bi-apple">下學期四校聯合音樂會中央場報曲進行中～</i>
+                小提醒：一樣也會有兩次驗曲呦～
+                ⚠️若要去外校場預計於三月中後旬開放表單～</p>
+        
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <span>03</span>
+              <h4>
+                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2F1CcxF8wFf3SaieQUxFLgkxFegK2mEQnqG7_--pCyeRMA%2Fedit%3Fusp%3Ddrivesdk&h=AT3BF9IDd9HBLza0Ua9yd3Ws38Rxfo2zntspsijhkV43ECQ7mZ4_40rIsnEt2pfS_OUvzTEJjaZ-x3Pj5hTJZ5if1gpcRLB-hhcIUfgFiqpO_FlwWfiJHT22PiTOiKndrCu11trJP3AFbWU5slN30FfKkUfXplKxvUPEpZZjMp0ngVT6&__tn__=-UK-R&c[0]=AT3MFg_RyutnyVv2PbSn2C5rzGNktBdcBukWVlxiQesDX_lo7g6UPkvc7vFiq_loB7WB938d15Yraw-BH1QUIaGA9qauYKRTaUA24qi1_i8CP3QiLWiYBlXvPykhy7TKI8etdTL7ULhDChfHBmePBuzWW_xtzqPV9Q7u77LnoZ0m-WQ9olKbzRGQK6bjVgoJ3g" class="stretched-link" target="_blank">
+                  期末音樂會招工
+                </a>
+              </h4>
+          
+              <p>下學期四校聯合音樂會中央場招募工人中</p>
+              <p>不會彈鋼琴？沒關係！加入工人組，不僅能體驗音樂會籌備，還能累積時數！</p>
+          
+
+              <ul class="list-unstyled">
+                <li>
+                  🎤 <strong>節目組</strong> – 舞台焦點等你來！
+                  <p>負責音樂會主持與串場，享受燈光聚焦的快感，累積寶貴經驗，為未來的舞台做好準備！</p>
+                </li>
+          
+                <li>
+                  🖌️ <strong>廣宣組</strong> – 讓全校看到你的創意！
+                  <p>負責節目單、邀請卡設計及公關接待，發揮你的美感，打造音樂會視覺盛宴！</p>
+                </li>
+          
+                <li>
+                  💡 <strong>場器組</strong> – 幕後功臣，掌控全場！
+                  <p>負責器材租借、燈音控、獎品選購及茶點準備，不必上台，卻是成功關鍵！</p>
+                </li>
+              </ul>
+          
+              <p>心動了嗎？快填表單加入我們！🩷</p>
+
+            </div>
+
+          </div>
+          
+
+            </div>
+          </div><!-- Card Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+
+ 
+
+<!-- Book a Piano Room Section -->
+<section id="book-a-room" class="book-a-table section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>RESERVATION</h2>
+    <p>Book a Piano Room</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <select name="phone" class="form-select" required>
+            <option value="" disabled selected>選擇琴房</option>
+            <option value="Option 1">社窩</option>
+            <option value="Option 2">小琴房</option>
+            <option value="Option 3">中琴房</option>
+            <option value="Option 4">大琴房</option>
+          </select>
+        </div>
+        </div>
+
+        <style>
+          .form-select {
+            font-size: 14px;
+            padding: 10px 15px;
+            box-shadow: #424949;
+            border-radius: 0;
+            color: var(--default-color);
+            background-color: color-mix(in srgb, var(--background-color), transparent 20%);
+            border-color:#424949;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          }
+
+          .form-select:focus {
+            border-color: var(--accent-color, gold);
+            outline: none;
+          }
+        </style>
+
+      <!-- Reservation Time Slots -->
+      <div class="row mt-4">
+        <div class="col-lg-12">
+         <fieldset><legend>Choose Your Time :</legend> <ul class="php-email-form" id="reservation-days">
+          <!-- JavaScript 會在這裡插入每一天的時段 -->
+        </ul></fieldset>
+        </div>
+      </div>
+
+      <style>
+        fieldset {
+          border: 1px solid #424949;       
+          background-color: #000000;      
+          padding: 1em;
+          
+        }
+      
+        legend {
+          color:#424949;                   /* 標題文字顏色 */
+          font-weight: 400;
+          font-size: 16px;
+        }
+      </style>
+
+      <!-- Submit -->
+      <div class="text-center mt-3">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your booking request was sent!</div>
+        <button type="submit" class="btn btn-primary">Submit Reservation</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Generate time slots via JS -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+    const container = document.getElementById("reservation-days");
+
+    days.forEach(day => {
+      const li = document.createElement("li");
+      li.className = "list-group-item";
+
+      const toggle = document.createElement("a");
+      toggle.className = "dropdown-toggle reservation-day";
+      toggle.setAttribute("data-bs-toggle", "collapse");
+      toggle.href = `#${day.toLowerCase()}`;
+      toggle.role = "button";
+      toggle.ariaExpanded = "false";
+      toggle.ariaControls = day.toLowerCase();
+      toggle.textContent = day;
+
+      const collapse = document.createElement("div");
+      collapse.className = "collapse";
+      collapse.id = day.toLowerCase();
+
+      for (let h = 8; h <= 22; h++) {
+        const hStr = h.toString().padStart(2, '0');
+        ["00", "30"].forEach(min => {
+          if (h === 22 && min === "30") return;
+          const time = `${hStr}:${min}`;
+const fullKey = `${day} ${time}`;
+const isFull = fullyBooked.includes(fullKey);
+
+const div = document.createElement("div");
+div.className = "form-check";
+
+div.innerHTML = `
+  <input class="form-check-input" type="checkbox" name="times[]" value="${fullKey}" ${isFull ? 'disabled' : ''}>
+  <label class="form-check-label ${isFull ? 'text-danger' : ''}">
+    ${isFull ? `${time}（已滿）` : time}
+  </label>`;
+  
+
+collapse.appendChild(div);
+
+        });
+      }
+
+      li.appendChild(toggle);
+      li.appendChild(collapse);
+      container.appendChild(li);
+    });
+  });
+
+  // 模擬已滿的時段資料（實際上應該從資料庫或伺服器來）
+const fullyBooked = [
+  "Monday 08:30",
+  "Monday 09:00",
+  "Monday 09:30",
+  "Tuesday 10:00",
+  "Tuesday 10:30",
+  "Friday 14:30",
+  "Friday 15:00",
+  "Wednesday 12:00",
+  "Wednesday 12:30",
+  "Wednesday 13:00",
+  "Wednesday 13:30",
+  "Wednesday 14:00",
+  "Thursday 16:00",
+];
+
+</script>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <p>Some photos from Our Club</p>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/Screenshot_20250428_090747_Instagram (1).jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/Screenshot_20250428_090747_Instagram (1).jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/Screenshot_20250428_090753_Instagram.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/Screenshot_20250428_090753_Instagram.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/Screenshot_20250428_090758_Instagram.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/Screenshot_20250428_090758_Instagram.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/Screenshot_20250428_090803_Instagram.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/Screenshot_20250428_090803_Instagram.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/Screenshot_20250428_090809_Instagram.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/Screenshot_20250428_090809_Instagram.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/Screenshot_20250428_090739_Instagram.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/Screenshot_20250428_090739_Instagram.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/Screenshot_20250428_090735_Instagram.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/Screenshot_20250428_090735_Instagram.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">NCU piano</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">伍育嫻</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
